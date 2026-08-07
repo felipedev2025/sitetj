@@ -22,8 +22,8 @@ export const segmentHighlights: SegmentHighlight[] = [
       "Recebimento parcial ou por itens",
       "Agrupe e reserve mesas de forma prática",
     ],
-    image: "/images/institutional/tj-automacao-tj-sistemas-bar-restaurante.png",
-    alt: "TJ Sistemas — gestão de mesas e comandas para bares e restaurantes",
+    image: "/images/institutional/segmentos/garcom-atendendo-mesa.png",
+    alt: "Garçom anotando pedido pelo celular na mesa de um restaurante, exemplo do TJ Sistemas em uso",
     whatsappText: "Quero saber mais sobre o TJ Sistemas para bares e restaurantes",
   },
   {

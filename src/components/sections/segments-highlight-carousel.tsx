@@ -10,7 +10,7 @@ import { HeroBackgroundVideo } from "@/components/sections/hero-background-video
 import { company } from "@/data/company";
 import { segmentHighlights } from "@/data/segment-highlights";
 
-const AUTO_ADVANCE_MS = 7000;
+const AUTO_ADVANCE_MS = 2000;
 
 export function SegmentsHighlightCarousel() {
   const [index, setIndex] = useState(0);
