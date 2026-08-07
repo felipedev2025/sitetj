@@ -48,8 +48,7 @@ export function ContactSection() {
             </Button>
             <Button
               size="lg"
-              variant="outline"
-              className="flex-1 gap-2"
+              className="flex-1 gap-2 bg-brand hover:bg-brand-dark"
               render={
                 <a
                   href={company.contact.financeiroWhatsapp.href}

@@ -7,6 +7,7 @@ export type EquipmentCategory = {
 
 export const equipmentCategories: EquipmentCategory[] = [
   { slug: "balanca", title: "Balanças", count: 13, cover: "/images/equipment/balanca/balanca-toledo-prix-5-plus-black-v6.png" },
+  { slug: "balanca-de-plataforma", title: "Balança de Plataforma", count: 3, cover: "/images/equipment/balanca/balanca-plataforma.jpeg" },
   { slug: "impressoras-fiscais", title: "Impressoras de Cupom Térmico", count: 5, cover: "/images/equipment/impressoras-fiscais/impressoras-fiscais-bematech-mp-4200-th.jpg" },
   // Impressoras Não Fiscais não é mais vendida — categoria removida da vitrine.
   { slug: "impressoras-de-etiquetas", title: "Impressoras de Etiquetas", count: 8, cover: "/images/equipment/impressoras-de-etiquetas/impressoras-de-etiquetas-elgin-l42.jpg" },
