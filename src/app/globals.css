@@ -1,0 +1,220 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@custom-variant dark (&:is(.dark *));
+
+/*
+ * Design tokens — TJ Automação
+ * Institutional colors sampled directly from the real logo/brand material
+ * (logo.jpeg, cartão de visitas): brand blue #067ABE and ink gray #6C6C6A.
+ * Deep navy surfaces are a derived neutral inspired by the circuit-board
+ * artwork on the business card, used only for dark section backgrounds —
+ * not a claimed "brand color".
+ */
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-sans);
+  --color-sidebar-ring: var(--sidebar-ring);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar: var(--sidebar);
+  --color-chart-5: var(--chart-5);
+  --color-chart-4: var(--chart-4);
+  --color-chart-3: var(--chart-3);
+  --color-chart-2: var(--chart-2);
+  --color-chart-1: var(--chart-1);
+  --color-ring: var(--ring);
+  --color-input: var(--input);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-accent: var(--accent);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-muted: var(--muted);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-secondary: var(--secondary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-primary: var(--primary);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-popover: var(--popover);
+  --color-card-foreground: var(--card-foreground);
+  --color-card: var(--card);
+  --color-brand: var(--brand);
+  --color-brand-dark: var(--brand-dark);
+  --color-navy: var(--navy);
+  --color-navy-light: var(--navy-light);
+  --color-whatsapp: var(--whatsapp);
+  --radius-sm: calc(var(--radius) * 0.6);
+  --radius-md: calc(var(--radius) * 0.8);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) * 1.4);
+  --radius-2xl: calc(var(--radius) * 1.8);
+  --radius-3xl: calc(var(--radius) * 2.2);
+  --radius-4xl: calc(var(--radius) * 2.6);
+}
+
+:root {
+  /* Real brand colors */
+  --brand: #067abe; /* institutional blue, from logo + site legado */
+  --brand-dark: #045a8d; /* hover/pressed state, from site legado CSS */
+  --navy: #0b1420; /* derived dark neutral, inspired by cartão de visita */
+  --navy-light: #101d2e;
+  --whatsapp: #25d366; /* functional color, WhatsApp CTA only */
+
+  --background: #ffffff;
+  --foreground: #14171a;
+  --card: #ffffff;
+  --card-foreground: #14171a;
+  --popover: #ffffff;
+  --popover-foreground: #14171a;
+  --primary: var(--brand);
+  --primary-foreground: #ffffff;
+  --secondary: #f4f6f8;
+  --secondary-foreground: #14171a;
+  --muted: #f4f6f8;
+  --muted-foreground: #6c6c6a;
+  --accent: #eaf4fb;
+  --accent-foreground: var(--brand-dark);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: #e6e9ec;
+  --input: #e6e9ec;
+  --ring: var(--brand);
+  --chart-1: var(--brand);
+  --chart-2: oklch(0.556 0 0);
+  --chart-3: oklch(0.439 0 0);
+  --chart-4: oklch(0.371 0 0);
+  --chart-5: oklch(0.269 0 0);
+  --radius: 0.75rem;
+  --sidebar: #fafbfc;
+  --sidebar-foreground: #14171a;
+  --sidebar-primary: var(--brand);
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #f4f6f8;
+  --sidebar-accent-foreground: #14171a;
+  --sidebar-border: #e6e9ec;
+  --sidebar-ring: var(--brand);
+}
+
+.dark {
+  --background: var(--navy);
+  --foreground: #f2f5f7;
+  --card: var(--navy-light);
+  --card-foreground: #f2f5f7;
+  --popover: var(--navy-light);
+  --popover-foreground: #f2f5f7;
+  --primary: #3ea3dd;
+  --primary-foreground: var(--navy);
+  --secondary: #16233559;
+  --secondary-foreground: #f2f5f7;
+  --muted: #16233559;
+  --muted-foreground: #9aa7b3;
+  --accent: #16233599;
+  --accent-foreground: #3ea3dd;
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: #ffffff1a;
+  --input: #ffffff26;
+  --ring: #3ea3dd;
+  --chart-1: #3ea3dd;
+  --chart-2: oklch(0.556 0 0);
+  --chart-3: oklch(0.439 0 0);
+  --chart-4: oklch(0.371 0 0);
+  --chart-5: oklch(0.269 0 0);
+  --sidebar: var(--navy);
+  --sidebar-foreground: #f2f5f7;
+  --sidebar-primary: #3ea3dd;
+  --sidebar-primary-foreground: var(--navy);
+  --sidebar-accent: #16233559;
+  --sidebar-accent-foreground: #f2f5f7;
+  --sidebar-border: #ffffff1a;
+  --sidebar-ring: #3ea3dd;
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+  html {
+    @apply font-sans scroll-smooth;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-heading tracking-tight;
+  }
+}
+
+@layer utilities {
+  .container-page {
+    @apply mx-auto w-full max-w-[1200px] px-6 sm:px-8 lg:px-10;
+  }
+}
+
+@keyframes tech-node-pulse {
+  0%,
+  100% {
+    opacity: 0.35;
+    r: 3;
+  }
+  50% {
+    opacity: 0.9;
+    r: 5;
+  }
+}
+
+.tech-node-pulse {
+  animation: tech-node-pulse 3.5s ease-in-out infinite;
+  animation-delay: calc(var(--pulse-i, 0) * 0.4s);
+  transform-origin: center;
+}
+
+@keyframes marquee-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.marquee-track {
+  animation: marquee-scroll 32s linear infinite;
+}
+
+.marquee-track-reverse {
+  animation: marquee-scroll 32s linear infinite reverse;
+}
+
+.group:hover .marquee-track,
+.group:hover .marquee-track-reverse {
+  animation-play-state: paused;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .marquee-track,
+  .marquee-track-reverse {
+    animation: none !important;
+  }
+}
