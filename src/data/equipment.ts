@@ -43,7 +43,7 @@ export const timeClockHighlights = [
   },
   {
     title: "Relógio Biométrico",
-    image: "/images/equipment/relogio-de-ponto/relogios.png",
+    image: "/images/equipment/relogio-de-ponto/relogio-de-ponto-henry-biometrico-v2.jpeg",
   },
   {
     title: "Relógio Cartográfico",
