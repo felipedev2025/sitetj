@@ -43,11 +43,6 @@ export function TimeClockHighlightSection() {
                 </div>
                 <div className="p-6 text-center">
                   <h3 className="font-semibold">{item.title}</h3>
-                  {item.description && (
-                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                      {item.description}
-                    </p>
-                  )}
                 </div>
               </div>
             </Reveal>
