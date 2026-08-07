@@ -39,7 +39,7 @@ export const totalEquipmentCount = equipmentCategories.reduce((sum, c) => sum + 
 export const timeClockHighlights = [
   {
     title: "Relógio facial",
-    image: "/images/equipment/relogio-de-ponto/destaque-facial.png",
+    image: "/images/equipment/relogio-de-ponto/relogio-de-ponto-henry-facial-v2.jpeg",
   },
   {
     title: "Relógio Biométrico",
