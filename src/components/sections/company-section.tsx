@@ -27,7 +27,7 @@ export function CompanySection() {
           <Reveal delay={0.1}>
             <div className="relative aspect-[16/9] w-full overflow-hidden rounded-2xl">
               <Image
-                src="/images/institutional/tj-automacao-fachada-loja-v3.jpeg"
+                src="/images/institutional/tj-automacao-fachada-loja-v4.png"
                 alt="Fachada da loja TJ Automação em Jaú/SP"
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
