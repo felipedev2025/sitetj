@@ -5,7 +5,7 @@ import { ClientsSection } from "@/components/sections/clients-section";
 import { CompleteSolutionSection } from "@/components/sections/complete-solution-section";
 import { ServicesSection } from "@/components/sections/services-section";
 import { SegmentsSection } from "@/components/sections/segments-section";
-import { ChefMobileHighlightSection } from "@/components/sections/chefmobile-highlight-section";
+import { SegmentsHighlightCarousel } from "@/components/sections/segments-highlight-carousel";
 import { SystemSection } from "@/components/sections/system-section";
 import { SupportHighlightSection } from "@/components/sections/support-highlight-section";
 import { InfrastructureSection } from "@/components/sections/infrastructure-section";
@@ -26,7 +26,7 @@ export default function Home() {
       <CompleteSolutionSection />
       <ServicesSection />
       <SegmentsSection />
-      <ChefMobileHighlightSection />
+      <SegmentsHighlightCarousel />
       <SystemSection />
       <SupportHighlightSection />
       <InfrastructureSection />
