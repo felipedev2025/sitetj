@@ -18,7 +18,7 @@ export function TimeClockHighlightSection() {
               Relógio de ponto
             </span>
             <h2 className="mt-3 text-3xl font-semibold sm:text-4xl">
-              Controle de ponto homologado, sem complicação
+              Controle de ponto homologado
             </h2>
             <p className="mt-3 text-white/70">
               Modelos 100% homologados e em total conformidade com o MTE - Ministério do
