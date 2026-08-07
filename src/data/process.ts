@@ -26,6 +26,6 @@ export const differentiators: Differentiator[] = [
   { title: "Atendimento especializado", description: "Equipe técnica dedicada, com foco em resolver o problema real do cliente." },
   { title: "Implantação completa", description: "Da instalação à virada de chave, sem deixar pontas soltas." },
   { title: "Treinamento incluso", description: "Sua equipe sai apta a operar o sistema com segurança." },
-  { title: "Suporte contínuo", description: "Assistência técnica presente para toda Jaú e região." },
+  { title: "Suporte contínuo", description: "Assistência técnica presente para toda a região." },
   { title: "Sistema + equipamento integrados", description: "Software e hardware pensados para funcionar juntos, sem atritos." },
 ];

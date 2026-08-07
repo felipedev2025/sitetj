@@ -28,7 +28,7 @@ export const services: Service[] = [
     slug: "suporte",
     title: "Suporte e assistência técnica",
     description:
-      "Assistência técnica autorizada para manutenção e reparo de balanças, impressoras e todo equipamento que mantém sua operação em movimento — com técnicos treinados diretamente pelas autorizadas e estrutura de suporte para toda Jaú e região.",
+      "Assistência técnica autorizada para manutenção e reparo de balanças, impressoras e todo equipamento que mantém sua operação em movimento — com técnicos treinados diretamente pelas autorizadas e estrutura de suporte para toda a região.",
     icon: Wrench,
   },
   {

@@ -14,7 +14,7 @@ export const equipmentCategories: EquipmentCategory[] = [
   { slug: "leitores", title: "Leitores", count: 15, cover: "/images/equipment/leitores/leitores-elgin-2d-el-250.jpg" },
   { slug: "coletores-de-dados", title: "Coletores de Dados", count: 2, cover: "/images/equipment/coletores-de-dados/coletores-de-dados-zebra.png" },
   { slug: "micro-terminais", title: "Micro Terminais", count: 7, cover: "/images/equipment/micro-terminais/micro-terminais-gertec.png" },
-  { slug: "cpu-para-varejo", title: "CPU para Varejo", count: 7, cover: "/images/equipment/cpu-para-varejo/cpu-para-varejo-dell.png" },
+  { slug: "cpu-para-varejo", title: "Computadores", count: 7, cover: "/images/equipment/cpu-para-varejo/cpu-para-varejo-dell.png" },
   { slug: "monitores", title: "Monitores", count: 2, cover: "/images/equipment/monitores/monitores-monitor-led-15.jpg" },
   { slug: "teclados", title: "Teclados PDV", count: 2, cover: "/images/equipment/teclados/teclados-teclado-pdv.png" },
   { slug: "gavetas", title: "Gavetas", count: 3, cover: "/images/equipment/gavetas/gavetas-bematech.jpg" },
