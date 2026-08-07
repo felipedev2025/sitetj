@@ -47,8 +47,6 @@ export const timeClockHighlights = [
   },
   {
     title: "Relógio Cartográfico",
-    description:
-      "Moderno, compacto e autorizado pelo Ministério do Trabalho — basta ligar na tomada, ajustar o horário e começar a marcar.",
     image: "/images/equipment/relogio-de-ponto/destaque-cartografico.png",
   },
 ];
