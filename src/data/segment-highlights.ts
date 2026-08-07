@@ -59,6 +59,22 @@ export const segmentHighlights: SegmentHighlight[] = [
     whatsappText: "Quero saber mais sobre soluções para mercados e padarias",
   },
   {
+    slug: "acougue",
+    eyebrow: "Para açougues",
+    title: "Agilize o atendimento e o controle de peso do seu açougue",
+    description:
+      "Balanças, etiquetadoras e PDV integrados para dar mais agilidade e precisão em cada pesagem e venda.",
+    features: [
+      "Balanças e etiquetadoras conectadas",
+      "Frente de caixa rápido e integrado",
+      "Controle de estoque em tempo real",
+      "Emissão fiscal automática (NFC-e)",
+    ],
+    image: "/images/institutional/segmentos/acougue.png",
+    alt: "Atendente e cliente em um açougue, exemplo de segmento atendido pela TJ Automação",
+    whatsappText: "Quero saber mais sobre soluções para açougues",
+  },
+  {
     slug: "materiais-de-construcao",
     eyebrow: "Para materiais de construção",
     title: "Agilize vendas e o controle de produtos da sua loja de materiais de construção",
