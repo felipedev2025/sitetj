@@ -21,7 +21,9 @@ export function TimeClockHighlightSection() {
               Controle de ponto homologado, sem complicação
             </h2>
             <p className="mt-3 text-white/70">
-              Equipamentos Henry autorizados, do reconhecimento facial ao modelo cartográfico.
+              Modelos 100% homologados e em total conformidade com o MTE - Ministério do
+              Trabalho e Emprego, garantindo precisão no registro e segurança jurídica para sua
+              empresa.
             </p>
           </div>
         </Reveal>
@@ -39,11 +41,13 @@ export function TimeClockHighlightSection() {
                     className="object-contain"
                   />
                 </div>
-                <div className="p-6">
+                <div className="p-6 text-center">
                   <h3 className="font-semibold">{item.title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                    {item.description}
-                  </p>
+                  {item.description && (
+                    <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+                      {item.description}
+                    </p>
+                  )}
                 </div>
               </div>
             </Reveal>

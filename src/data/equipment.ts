@@ -39,12 +39,10 @@ export const totalEquipmentCount = equipmentCategories.reduce((sum, c) => sum + 
 export const timeClockHighlights = [
   {
     title: "Relógio facial",
-    description: "Potencializando a eficiência e a segurança no controle de ponto.",
     image: "/images/equipment/relogio-de-ponto/destaque-facial.png",
   },
   {
     title: "Relógio Biométrico",
-    description: "Modelos REP-C e REP-A homologados conforme a Portaria 671.",
     image: "/images/equipment/relogio-de-ponto/relogios.png",
   },
   {
