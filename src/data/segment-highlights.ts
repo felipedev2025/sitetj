@@ -107,6 +107,22 @@ export const segmentHighlights: SegmentHighlight[] = [
     whatsappText: "Quero saber mais sobre soluções para autopeças",
   },
   {
+    slug: "petshop",
+    eyebrow: "Para petshops",
+    title: "Tenha controle total de vendas e estoque do seu petshop",
+    description:
+      "Sistema de PDV completo para agilizar o caixa e manter o controle do seu estoque de produtos e serviços.",
+    features: [
+      "PDV rápido e intuitivo",
+      "Controle de estoque em tempo real",
+      "Gestão de clientes e fidelidade",
+      "Emissão fiscal automática (NFC-e)",
+    ],
+    image: "/images/institutional/segmentos/petshop.png",
+    alt: "Atendente e cliente em um petshop, exemplo de segmento atendido pela TJ Automação",
+    whatsappText: "Quero saber mais sobre soluções para petshops",
+  },
+  {
     slug: "moda",
     eyebrow: "Para moda",
     title: "Tenha controle total de vendas, trocas e fidelização de clientes",
