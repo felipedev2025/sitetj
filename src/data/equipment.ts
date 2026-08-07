@@ -47,6 +47,6 @@ export const timeClockHighlights = [
   },
   {
     title: "Relógio Cartográfico",
-    image: "/images/equipment/relogio-de-ponto/destaque-cartografico.png",
+    image: "/images/equipment/relogio-de-ponto/relogio-de-ponto-cartografico-v3.png",
   },
 ];

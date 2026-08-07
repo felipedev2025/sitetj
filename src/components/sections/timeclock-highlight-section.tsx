@@ -38,7 +38,7 @@ export function TimeClockHighlightSection() {
                     alt={item.title}
                     fill
                     sizes="(max-width: 640px) 100vw, 33vw"
-                    className="object-contain"
+                    className="object-cover"
                   />
                 </div>
                 <div className="p-6 text-center">
