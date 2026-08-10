@@ -23,12 +23,12 @@ export const equipmentCategories: EquipmentCategory[] = [
   // Caixas Registradoras não é mais vendida — categoria removida da vitrine.
   { slug: "calculadoras", title: "Calculadoras", count: 4, cover: "/images/equipment/calculadoras/calculadoras-elgin.png" },
   { slug: "impressoras-de-cheque", title: "Impressoras de Cheque", count: 3, cover: "/images/equipment/impressoras-de-cheque/impressoras-de-cheque-bematech-dp-20.jpg" },
-  { slug: "painel-de-senha", title: "Painel de Senha", count: 4, cover: "/images/equipment/painel-de-senha/painel-de-senha-led-teclado.jpg" },
-  { slug: "pin-pad", title: "Pin Pad", count: 5, cover: "/images/equipment/pin-pad/pin-pad-gertec.png" },
-  // SAT foi descontinuado (substituído por NFC-e) — categoria removida da vitrine.
   { slug: "relogio-de-ponto-biometrico", title: "Relógio de Ponto Biométrico", count: 2, cover: "/images/equipment/relogio-de-ponto/relogio-de-ponto-henry-rep-biometrico.jpg" },
   { slug: "relogio-de-ponto-facial", title: "Relógio de Ponto Facial", count: 2, cover: "/images/equipment/relogio-de-ponto/relogio-de-ponto-henry-rep-facial.jpg" },
   { slug: "relogio-cartografico", title: "Relógio Cartográfico", count: 2, cover: "/images/equipment/relogio-de-ponto/relogio-de-ponto-cartografico-novo.jpg" },
+  { slug: "painel-de-senha", title: "Painel de Senha", count: 4, cover: "/images/equipment/painel-de-senha/painel-de-senha-led-teclado.jpg" },
+  { slug: "pin-pad", title: "Pin Pad", count: 5, cover: "/images/equipment/pin-pad/pin-pad-gertec.png" },
+  // SAT foi descontinuado (substituído por NFC-e) — categoria removida da vitrine.
   { slug: "estabilizadores-e-no-break-s", title: "Estabilizadores e Nobreaks", count: 4, cover: "/images/equipment/estabilizadores-e-no-break-s/estabilizadores-e-no-break-s-sms-lite.png" },
   { slug: "fragmentadoras", title: "Fragmentadoras", count: 3, cover: "/images/equipment/fragmentadoras/fragmentadoras-aurora-as-1210-sb.jpg" },
   { slug: "comandas", title: "Comandas", count: 1, cover: "/images/equipment/comandas/comandas-personalizadas.png" },
