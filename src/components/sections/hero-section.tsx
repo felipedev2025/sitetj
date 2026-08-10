@@ -1,7 +1,8 @@
-import { ArrowRight, MessageCircle } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/ui/reveal";
 import { HeroBackgroundVideo } from "@/components/sections/hero-background-video";
+import { WhatsAppIcon } from "@/components/icons/social-icons";
 import { company, yearsInMarket } from "@/data/company";
 
 export function HeroSection() {
@@ -43,7 +44,7 @@ export function HeroSection() {
               className="h-12 gap-2 bg-brand px-6 text-base hover:bg-brand-dark"
               render={<a href="#contato" />}
             >
-              <MessageCircle className="h-5 w-5" />
+              <WhatsAppIcon className="h-6 w-6" />
               Falar no WhatsApp
             </Button>
             <Button
