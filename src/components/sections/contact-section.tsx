@@ -2,9 +2,10 @@
 
 import { useState, type FormEvent } from "react";
 import Image from "next/image";
-import { Mail, MapPin, Phone, Clock, Send, Briefcase, Wallet } from "lucide-react";
+import { Mail, MapPin, Phone, Clock, Send, Briefcase, Wallet, Headset, ArrowRight } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/ui/reveal";
+import { WhatsAppIcon } from "@/components/icons/social-icons";
 import { company } from "@/data/company";
 
 export function ContactSection() {
@@ -23,7 +24,7 @@ export function ContactSection() {
       <div className="container-page">
         <Reveal>
           <div className="mx-auto max-w-2xl text-center">
-            <h2 className="text-3xl font-semibold sm:text-4xl">Vamos nos comunicar?</h2>
+            <h2 className="text-3xl font-semibold sm:text-4xl">Vamos nos comunicar ?</h2>
             <p className="mt-3 text-muted-foreground">
               Conte um pouco sobre sua necessidade — respondemos direto no WhatsApp.
             </p>
@@ -31,35 +32,48 @@ export function ContactSection() {
         </Reveal>
 
         <Reveal delay={0.03}>
-          <div className="mx-auto mt-8 flex max-w-xl flex-col gap-3 sm:flex-row">
-            <Button
-              size="lg"
-              className="flex-1 gap-2 bg-brand hover:bg-brand-dark"
-              render={
-                <a
-                  href={company.contact.comercialWhatsapp.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                />
-              }
-            >
-              <Briefcase className="h-4 w-4" />
-              WhatsApp Comercial · {company.contact.comercialWhatsapp.label}
-            </Button>
-            <Button
-              size="lg"
-              className="flex-1 gap-2 bg-brand hover:bg-brand-dark"
-              render={
-                <a
-                  href={company.contact.financeiroWhatsapp.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                />
-              }
-            >
-              <Wallet className="h-4 w-4" />
-              WhatsApp Financeiro · {company.contact.financeiroWhatsapp.label}
-            </Button>
+          <div className="mx-auto mt-10 grid max-w-4xl gap-4 sm:grid-cols-3">
+            {[
+              {
+                icon: Briefcase,
+                title: "Comercial",
+                cta: "Clique e fale agora",
+                href: company.contact.comercialWhatsapp.href,
+              },
+              {
+                icon: Wallet,
+                title: "Financeiro",
+                cta: "Clique e fale agora",
+                href: company.contact.financeiroWhatsapp.href,
+              },
+              {
+                icon: Headset,
+                title: "Suporte Sistemas",
+                cta: "Clique e fale agora",
+                href: company.contact.supportWhatsapp.href,
+              },
+            ].map((item) => (
+              <a
+                key={item.title}
+                href={item.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative flex flex-col items-center gap-3 overflow-hidden rounded-2xl border border-border bg-card p-6 text-center shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-brand hover:shadow-lg hover:shadow-brand/20"
+              >
+                <span className="absolute inset-x-0 top-0 h-1 origin-left scale-x-0 bg-brand transition-transform duration-300 group-hover:scale-x-100" />
+                <span className="absolute right-3 top-3 flex h-6 w-6 items-center justify-center rounded-full bg-whatsapp text-white">
+                  <WhatsAppIcon className="h-3.5 w-3.5" />
+                </span>
+                <span className="flex h-14 w-14 items-center justify-center rounded-full bg-brand/10 text-brand transition-colors group-hover:bg-brand group-hover:text-white">
+                  <item.icon className="h-6 w-6" />
+                </span>
+                <p className="text-lg font-semibold">{item.title}</p>
+                <p className="flex items-center gap-1 text-sm font-medium text-brand">
+                  {item.cta}
+                  <ArrowRight className="h-4 w-4 transition-transform group-hover:translate-x-1" />
+                </p>
+              </a>
+            ))}
           </div>
         </Reveal>
 

@@ -21,8 +21,19 @@ export function SmoothScrollProvider({ children }: { children: React.ReactNode }
     }
     const raf_id = requestAnimationFrame(raf);
 
+    function handleAnchorClick(e: MouseEvent) {
+      const anchor = (e.target as HTMLElement).closest("a");
+      if (!anchor || !anchor.hash || anchor.pathname !== window.location.pathname) return;
+      const el = document.querySelector(anchor.hash);
+      if (!el) return;
+      e.preventDefault();
+      lenis.scrollTo(el as HTMLElement);
+    }
+    document.addEventListener("click", handleAnchorClick);
+
     return () => {
       cancelAnimationFrame(raf_id);
+      document.removeEventListener("click", handleAnchorClick);
       lenis.destroy();
     };
   }, []);

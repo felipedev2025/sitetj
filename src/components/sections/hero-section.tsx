@@ -41,9 +41,7 @@ export function HeroSection() {
             <Button
               size="lg"
               className="h-12 gap-2 bg-brand px-6 text-base hover:bg-brand-dark"
-              render={
-                <a href={company.contact.whatsapp.href} target="_blank" rel="noopener noreferrer" />
-              }
+              render={<a href="#contato" />}
             >
               <MessageCircle className="h-5 w-5" />
               Falar no WhatsApp

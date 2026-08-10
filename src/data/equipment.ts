@@ -11,9 +11,10 @@ export const equipmentCategories: EquipmentCategory[] = [
   { slug: "impressoras-fiscais", title: "Impressoras de Cupom Térmico", count: 5, cover: "/images/equipment/impressoras-fiscais/impressoras-fiscais-bematech-mp-4200-th.jpg" },
   // Impressoras Não Fiscais não é mais vendida — categoria removida da vitrine.
   { slug: "impressoras-de-etiquetas", title: "Impressoras de Etiquetas", count: 8, cover: "/images/equipment/impressoras-de-etiquetas/impressoras-de-etiquetas-elgin-l42.jpg" },
-  { slug: "impressoras-de-cheque", title: "Impressoras de Cheque", count: 3, cover: "/images/equipment/impressoras-de-cheque/impressoras-de-cheque-bematech-dp-20.jpg" },
+  { slug: "consulta-de-precos", title: "Consulta de Preços", count: 4, cover: "/images/equipment/consulta-de-precos/consulta-de-precos-toten-autoatendimento.jpeg" },
   { slug: "leitores", title: "Leitores", count: 15, cover: "/images/equipment/leitores/leitores-elgin-2d-el-250.jpg" },
   { slug: "coletores-de-dados", title: "Coletores de Dados", count: 2, cover: "/images/equipment/coletores-de-dados/coletores-de-dados-zebra.png" },
+  { slug: "terminal-de-autoatendimento", title: "Terminal de Autoatendimento", count: 2, cover: "/images/equipment/terminal-de-autoatendimento/terminal-de-autoatendimento.png" },
   { slug: "micro-terminais", title: "Micro Terminais", count: 7, cover: "/images/equipment/micro-terminais/micro-terminais-gertec.png" },
   { slug: "cpu-para-varejo", title: "Computadores", count: 7, cover: "/images/equipment/cpu-para-varejo/cpu-para-varejo-dell.png" },
   { slug: "monitores", title: "Monitores", count: 2, cover: "/images/equipment/monitores/monitores-monitor-led-15.jpg" },
@@ -21,7 +22,7 @@ export const equipmentCategories: EquipmentCategory[] = [
   { slug: "gavetas", title: "Gavetas", count: 3, cover: "/images/equipment/gavetas/gavetas-bematech.jpg" },
   // Caixas Registradoras não é mais vendida — categoria removida da vitrine.
   { slug: "calculadoras", title: "Calculadoras", count: 4, cover: "/images/equipment/calculadoras/calculadoras-elgin.png" },
-  { slug: "consulta-de-precos", title: "Consulta de Preços", count: 4, cover: "/images/equipment/consulta-de-precos/consulta-de-precos-gertec.png" },
+  { slug: "impressoras-de-cheque", title: "Impressoras de Cheque", count: 3, cover: "/images/equipment/impressoras-de-cheque/impressoras-de-cheque-bematech-dp-20.jpg" },
   { slug: "painel-de-senha", title: "Painel de Senha", count: 4, cover: "/images/equipment/painel-de-senha/painel-de-senha-led-teclado.jpg" },
   { slug: "pin-pad", title: "Pin Pad", count: 5, cover: "/images/equipment/pin-pad/pin-pad-gertec.png" },
   // SAT foi descontinuado (substituído por NFC-e) — categoria removida da vitrine.

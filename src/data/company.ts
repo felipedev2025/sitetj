@@ -39,10 +39,7 @@ export const company = {
       "Parceria estratégica para sistemas de gestão empresarial (ERP), integrando PDV, estoque, financeiro, fiscal e relatórios em uma única plataforma.",
   },
   contact: {
-    phones: [
-      { label: "(14) 3622-0200", href: "tel:+551436220200" },
-      { label: "(14) 3624-7010", href: "tel:+551436247010" },
-    ],
+    phones: [{ label: "(14) 3622-0200", href: "tel:+551436220200" }],
     email: "contato@tjautomacao.com.br",
     whatsapp: {
       number: "551436220200",
