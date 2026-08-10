@@ -61,7 +61,7 @@ export function ContactSection() {
                 className="group relative flex flex-col items-center gap-3 overflow-hidden rounded-2xl border border-border bg-card p-6 text-center shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-brand hover:shadow-lg hover:shadow-brand/20"
               >
                 <span className="absolute inset-x-0 top-0 h-1 origin-left scale-x-0 bg-brand transition-transform duration-300 group-hover:scale-x-100" />
-                <span className="absolute right-3 top-3 flex h-6 w-6 items-center justify-center rounded-full bg-whatsapp text-white">
+                <span className="absolute right-3 top-3 flex h-6 w-6 items-center justify-center rounded-full bg-brand text-white">
                   <WhatsAppIcon className="h-3.5 w-3.5" />
                 </span>
                 <span className="flex h-14 w-14 items-center justify-center rounded-full bg-brand/10 text-brand transition-colors group-hover:bg-brand group-hover:text-white">
