@@ -113,7 +113,16 @@ export function SiteFooter() {
               Termos de Uso
             </Link>
           </div>
-          <p>Desenvolvido por Felipe Fragoso — 2026</p>
+          <p>
+            <a
+              href="https://wa.me/5514991100309?text=Vim%20pelo%20site%20da%20TJ%20Automa%C3%A7%C3%A3o%2C%20tenho%20interesse%20em%20desenvolver%20um%20site%20com%20voc%C3%AA"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white"
+            >
+              Desenvolvido por Felipe Fragoso — 2026
+            </a>
+          </p>
         </div>
       </div>
     </footer>
