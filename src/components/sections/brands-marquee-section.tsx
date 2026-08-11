@@ -38,14 +38,14 @@ export function BrandsMarqueeSection() {
             {[...authorizedBrands, ...authorizedBrands].map((brand, i) => (
               <div
                 key={`${brand.name}-${i}`}
-                className="flex h-24 w-40 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white p-5"
+                className="flex h-24 w-40 shrink-0 items-center justify-center rounded-xl border border-white/10 bg-white p-2"
               >
                 <Image
                   src={brand.image}
                   alt={brand.name}
                   width={160}
                   height={80}
-                  className="h-auto max-h-14 w-full object-contain"
+                  className="h-auto max-h-[80px] w-full object-contain"
                 />
               </div>
             ))}

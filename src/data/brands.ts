@@ -9,6 +9,7 @@ export const authorizedBrands: Brand[] = [
   { name: "Bematech", image: "/images/partners/bematech.jpg" },
   { name: "Daruma", image: "/images/partners/daruma.png" },
   { name: "Elgin", image: "/images/partners/elgin.png" },
+  { name: "Epson", image: "/images/partners/epson.png" },
   { name: "Gertec", image: "/images/partners/gertec.jpg" },
   { name: "Henry", image: "/images/partners/henry.jpg" },
   { name: "Menno", image: "/images/partners/menno.gif" },
