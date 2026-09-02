@@ -93,7 +93,8 @@ export function SiteFooter() {
                 className="hover:text-white"
               >
                 {company.contact.address.street} — {company.contact.address.neighborhood},{" "}
-                {company.contact.address.city}/{company.contact.address.state}
+                {company.contact.address.city}/{company.contact.address.state} ·{" "}
+                {company.contact.address.zip}
               </a>
             </li>
           </ul>
