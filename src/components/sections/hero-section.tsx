@@ -1,4 +1,4 @@
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Award } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/ui/reveal";
 import { HeroBackgroundVideo } from "@/components/sections/hero-background-video";
@@ -20,7 +20,8 @@ export function HeroSection() {
 
       <div className="container-page relative flex flex-col items-center gap-10 py-24 text-center sm:py-32">
         <Reveal>
-          <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-4 py-1.5 text-xs font-medium tracking-wide text-white/70 uppercase">
+          <span className="inline-flex items-center gap-2.5 rounded-full border border-brand/40 bg-brand/15 px-5 py-2 text-sm font-semibold tracking-wide text-white uppercase shadow-[0_0_30px_-8px_var(--brand)] sm:text-base">
+            <Award className="h-5 w-5 text-white" strokeWidth={2.5} />
             +{yearsInMarket} anos de mercado
           </span>
         </Reveal>
