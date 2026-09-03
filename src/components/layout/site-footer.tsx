@@ -92,7 +92,8 @@ export function SiteFooter() {
                 rel="noopener noreferrer"
                 className="hover:text-white"
               >
-                {company.contact.address.street} — {company.contact.address.neighborhood},{" "}
+                {company.contact.address.street} —{" "}
+                <span className="whitespace-nowrap">{company.contact.address.neighborhood}</span>,{" "}
                 {company.contact.address.city}/{company.contact.address.state} ·{" "}
                 {company.contact.address.zip}
               </a>
